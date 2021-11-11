@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: flex;
+        /* background-color: red; */
+        width: 100vw;
+        height: 800px;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+      }
+      .div1 {
+        clip-path: polygon(52% 32%, 45% 70%, 69% 66%);
+        background-color: green;
+        width: 20%;
+        height: 20%;
+        align-self: flex-start;
+      }
+      .div2 {
+        clip-path: polygon(53% 23%, 68% 45%, 46% 63%, 35% 43%);
+        background-color: green;
+        width: 20%;
+        height: 20%;
+      }
+      .div3 {
+        clip-path: circle(20% at 50% 50%);
+        background-color: green;
+        width: 20%;
+        height: 20%;
+        align-self: flex-start;
+      }
+      .div4 {
+        clip-path: polygon(50% 0%, 98% 38%, 84% 91%, 17% 90%, 3% 38%);
+        background-color: green;
+        width: 20%;
+        height: 20%;
+        align-self: flex-end;
+       
+      }
+      .div5 {
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        background-color: green;
+        width: 20%;
+        height: 20%;
+        align-self: flex-start;
+        
+      }
+      .div6 {
+        clip-path: inset(5% 20% 15% 10%);
+        background-color: green;
+        width: 20%;
+        height: 20%;
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <div class="parent">
+     <div class="div1"></div>
+     <div class="div5"></div>
+     <div class="div6"></div>
+     <div class="div2"></div>
+     <div class="div5"></div>
+     <div class="div6"></div>
+     <div class="div3"></div>
+     <div class="div4"></div>
+     <div class="div5"></div>
+     <div class="div6"></div>
+      </div>
+    </div>
+  </body>
+</html>
